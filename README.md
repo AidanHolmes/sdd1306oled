@@ -2,6 +2,9 @@
 Python code for the Sparkfun micro OLED using the SDD1306 and a 64x48 pixel screen
 This may work with other SDD1306 displays by overridding the _width and _height
 
+Create a local copy with the following call
+> git clone https://github.com/AidanHolmes/sdd1306oled
+
 ## Constraints
 This Python class only works with SPI configuration for the displays.
 All display work is done in the PIL library.
