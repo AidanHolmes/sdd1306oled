@@ -33,7 +33,7 @@ The example python64x48.png is required to be in the same directory as the examp
 ## Reference
 
 ### initialise()
-Call to open the SPI connection, configure the GPIO and send all setup commands to the display
+Call to open the SPI connection, configure the GPIO and send all setup commands to the display.
 Always call before any other functions or after a close() call
 
 ### printSPI()
@@ -49,7 +49,7 @@ Resumes the display and any previous image shown before turnOff()
 Write zeros to the OLED memory and blank the display
 
 ### display(image)
-Pass in a PIL image to display. This will attempt to format and resize the image if not 1 bit and the correct size. Resizing and conversion may not produce good results.
+Pass in a PIL image to display. This will attempt to format and resize the image if not 1 bit and the correct size. Resizing and conversion may not produce good results. For best results feed in PNG or XBM images which are 1 bit depth and sized to fit the screen.
 
 ### close()
 Close GPIO, SPI and reset the display. initialise() will need to be called again to reopen.
